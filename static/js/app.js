@@ -53,7 +53,7 @@ function handleClick() {
   };
 
   //Listen to an ecent that occurs on a webpage
-  d3.selectAll("#filter- btn").on("click", handleClick);
+  d3.selectAll("#filter-btn").on("click", handleClick);
 
   //call the original table so it loads when the first HTML does 
   buildTable(tableData);

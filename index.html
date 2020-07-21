@@ -14,17 +14,17 @@
 
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class= "bg-dark">
     <div class ="wrapper" >
         <!-- create the navigation bar-->
-        <nav class ="navbar navbar-expand-lg">
+        <nav class ="navbar navbar-dark bg-dark navbar-expand-lg">
             <!-- when the user clicks on the link the page will reload an unfiltered table-->
             <a class ="nav-brand" href= "index.html">UFO Sightings
 
             </a>
         </nav>
         <div class="jumbotron">
-            <h1>The Truth Is Out There</h1>
+            <h1 class="display-4"> The Truth Is Out There</h1>
         </div>
         <!-- ensure that ekements we are adding will span the width of viewport-->
         <div class= "container-fluid">
@@ -47,19 +47,19 @@
             </div>
         </div>
         <div class= "container-fluid">
-            <div class= :row>
+            <div class= "row">
                 <div class= "col-md-3">
-                    <form>
+                    <form class= "bg-dark" >
                         <p> Filter Search</p>
-                    </form>
-                    <ul class= "list-group.">
+                    </form >
+                    <ul class= "list-group." class= "bg-dark">
                         <!-- Add a list group item one for the button and one fo the list-->
-                        <li class= "list-group-item">
+                        <li class= "list-group-item" class= "bg-dark">
                             <label for = 'date'> Enter Date</label>
                             <input type="text" placeholder="1/10/2010" id="datetime" />
                         </li>
                         <li>
-                            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                            <button id="filter-btn" type="button" class="btn btn-default" class= "bg-dark">Filter Table</button>
                         </li>
                     </ul>
                 </div>
@@ -82,5 +82,8 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
 </body>
 </html>
