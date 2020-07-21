@@ -27,3 +27,34 @@ function buildTable(data) {
       );
     });
   }
+
+  //if statements pseudocode practice 
+  // if (a date is entered) {
+	//Filter the default data to show only the date entered
+//};
+
+function handleClick() {
+    // Grab the datetime value from the filter
+    let date = d3.select("#datetime").property("value");
+    let filteredData = tableData;
+    
+     // Check to see if a date was entered and filter the
+    // data using that date.
+    if (date) {
+      // Apply `filter` to the table data to only keep the
+      // rows where the `datetime` value matches the filter value
+      filteredData = filteredData.filter(row => row.datetime === date);
+    };
+    
+     // Rebuild the table using the filtered data
+    // @NOTE: If no date was entered, then filteredData will
+    // just be the original tableData.
+    buildTable(filteredData);
+  };
+
+  //Listen to an ecent that occurs on a webpage
+  d3.selectAll("#filter- btn").on("click", handleClick);
+
+  //call the original table so it loads when the first HTML does 
+  buildTable(tableData);
+  
