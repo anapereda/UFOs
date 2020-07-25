@@ -19,7 +19,7 @@
         <!-- create the navigation bar-->
         <nav class ="navbar navbar-dark bg-dark navbar-expand-lg">
             <!-- when the user clicks on the link the page will reload an unfiltered table-->
-            <a class ="nav-brand" href= "index_copy.html">UFO Sightings
+            <a class ="nav-brand" href= "index_challenge.html">UFO Sightings
 
             </a>
         </nav>
@@ -52,16 +52,26 @@
                     <form class= "bg-dark" >
                         <p> Filter Search</p>
                     </form >
-                    <ul class= "list-group." class= "bg-dark">
-                        <!-- Add a list group item one for the button and one fo the list-->
-                        <li class= "list-group-item" class= "bg-dark">
-                            <label for = 'date'> Enter Date</label>
-                            <input type="text" placeholder="1/10/2010" id="datetime" />
-                        </li>
-                        <li>
-                            <button id="filter-btn" type="button" class="btn btn-default" class= "bg-dark">Filter Table</button>
-                        </li>
-                    </ul>
+                    <li class="list-group-item bg-dark">
+                        <label for="date">Enter Date</label>
+                        <input type="text" placeholder="1/10/2010" id="datetime" />
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="country">Country</label>
+                        <input type="text" placeholder="us" id="country" />
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="shape">Enter Shape</label>
+                        <input type="text" placeholder="triangle" id="shape" />
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="city">Enter City</label>
+                        <input type="text" placeholder="bonita" id="city" />
+                    </li>
+                    <li class="list-group-item bg-dark">
+                        <label for="state">Enter State</label>
+                        <input type="text" placeholder="ca" id="state" />
+                      </li>
                 </div>
                 <div class= "col-md-9">
                     <table class="table table-striped">
